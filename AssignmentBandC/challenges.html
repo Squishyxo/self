@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="challenges.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script defer src="challenges.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h2 id="portfolio"><a href="index.html">PORTFOLIO</a></h2>
+    </nav>
+    <div class="start">
+        <div class="card" data-title="JavaScript Challenges">
+            <p>
+                For the final assignment for FED, I was working on JavaScript challenges. </p>
+            <p>
+                On this page, you can find every exercise that I have done for FED. I liked the idea of being able to choose the exercises ourselves, because it shows you how powerful JavaScript is.
+            </p>
+        </div>
+    </div>
+    <div class="start2">
+        <div class="container2">
+            <div class="card2">
+                <i class="fab fa-leanpub"></i>
+                <div class="number2" data-target-number="2">Sources</div>
+                W3Schools & Stack OverFlow
+            </div>
+            <div class="card2">
+                <i class="fab fa-js-square"></i>
+                <div class="number2">JavaScript</div>
+                I invest 3 hours daily practicing JavaScript
+            </div>
+            <div class="card2">
+                <i class="fas fa-code"></i>
+                <div class="number2" data-target-number="3">Coding</div>
+                3 month of JavaScript-ing
+            </div>
+            <div class="card2">
+                <i class="fas fa-check"></i>
+                <div class="number2" data-target-number="20">Projects</div>
+                +20 Projects Done
+            </div>
+        </div>
+    </div><br><br><br><br>
+    <hr>
+    <h1 style="color: black;" class="center">Let's play a game!</h1>
+    <h2>The game is called "Rock, paper, scissors". You should choose one of these and compete with the computer. Don't worry, it's a 50/50 game. Good luck ;).</h2>
+
+    <div class="grid-container">
+        <button onclick="playGameRock()" class="grid-item">rock</button>
+        <button onclick="playGamePaper()" class="grid-item">paper</button>
+        <button onclick="playGameScissors()" class="grid-item">scissors</button>
+    </div><br>
+    <input type="text" id="msg" placeholder="choose ur fighter! (rock, paper, or scissors.)" size="80"><br><br>
+    <button class="button1" onclick="playGame()">Click me</button><br><br>
+
+    <h3 class="center" id="userInput2"></h3>
+    <h3 class="center" id="computerInput"></h3>
+    <h3 class="center" id="winner"></h3><br><br><br>
+    <!-- Factorial -->
+    <div class="input-group1">
+        <hr>
+        <h1 style="text-align: center;">Factorial</h1>
+        <input type="text" placeholder=" " id="input" class="effect-4">
+        <label for="input">Enter a number</label>
+        <button class="button1" id="btn" type="submit">Submit</button>
+        <br />
+        <br />
+        <p class="answer" id="factorial"></p>
+    </div><br><br><br>
+    <!-- Longest Word -->
+    <div class="input-group1">
+        <hr>
+        <h1 style="text-align: center;">Longest Word</h1>
+        <input type="text" placeholder=" " id="input5" class="effect-4">
+        <label for="input5">Type a sentence</label>
+        <button class="button1" id="longestWord" type="submit">Submit</button>
+        <br />
+        <br />
+        <p class="answer" id="longestWord1"></p>
+    </div>
+    <hr>
+    <!-- Tip Calculator -->
+
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <div id="calculator">
+            <form>
+                <p>How much was your bill?
+                    <p>
+
+                        $
+                        <div class="input-group1 overflow-hidden"><input id="billamt" type="text" placeholder="Bill Amount" class="effect-6">
+                            <span class="bg"></span></div>
+                        <p>How was your service?
+                            <p>
+                                <select id="serviceQual">
+              <option disabled selected value="0">-- Choose an Option --</option>
+              <option value="0.3">30&#37; &#45; Outstanding</option>
+              <option value="0.2">20&#37; &#45; Good</option>
+              <option value="0.15">15&#37; &#45; It was OK</option>
+              <option value="0.1">10&#37; &#45; Bad</option>
+              <option value="0.05">5&#37; &#45; Terrible</option>
+          </select>
+            </form>
+            <p>How many people are sharing the bill?</p>
+            <div class="input-group1 overflow-hidden">
+                <input id="peopleamt" type="text" placeholder="Number of People" class="effect-6">
+                <span class="bg"></span></div>
+            <button class="button1" type="button" id="calculate">Calculate!</button>
+        </div>
+        <div id="totalTip">
+            <sup>$</sup><span id="tip">0.00</span>
+            <small id="each">each</small>
+        </div>
+    </div><br><br><br>
+
+    <!-- Letter changes -->
+    <!-- <div>
+        <h1 style="text-align: center;">Letter changes</h1>
+        <input type="text" placeholder="Type a sentence" id="input5" />
+        <br/>
+        <br/>
+        <button onclick="letterChanges(word)" class="button1" type="submit">Submit</button>
+        <br/>
+        <br/>
+        <p id="output9"></p>
+    </div> -->
+
+
+    <!-- letter changes -->
+    <div class="input-group1">
+        <hr>
+        <h1 style="text-align: center;">letter changes</h1>
+        <input type="text" placeholder=" " id="reverseText" class="effect-4">
+        <label for="reverseText">Type a sentence</label>
+        <button onclick="firstReverse()" class="button1">Submit</button>
+        <br />
+        <br />
+        <p class="answer" id="output7"></p>
+    </div>
+    <!-- first reverse -->
+    <div class="input-group1">
+        <hr>
+        <h1 style="text-align: center;">first reverse</h1>
+        <input type="text" placeholder=" " id="reversedText" class="effect-4">
+        <label for="reversedText">Type a sentence</label>
+        <button onclick="reverse()" class="button1">Submit</button>
+        <br />
+        <br />
+        <p class="answer" id="output8"></p>
+    </div>
+    <!-- weight converter -->
+    <div class="input-group1">
+        <hr>
+        <h1 style="text-align: center;">Weight Converter</h1>
+        <input type="text" placeholder=" " id="weightInput" class="effect-4">
+        <label for="weightInput">Enter the weight in kg to convert it to pound</label>
+        <button onclick="kgToPound()" class="button1">Submit</button>
+        <br />
+        <br />
+        <p class="answer" id="output9"></p>
+    </div>
+
+    <!-- capitalize -->
+    <div class="input-group1">
+        <hr>
+        <h1 style="text-align: center;">letter capitalize</h1>
+        <input type="text" placeholder=" " id="capitalizeInput" class="effect-4">
+        <label for="capitalizeInput">Type something to capitalize first letter</label>
+        <button onclick="capitalizeLetters()" class="button1">Submit</button>
+        <br />
+        <br />
+        <p class="answer" id="output10"></p>
+    </div>
+
+    <!-- Restaurant -->
+    <h1 class="center">WELCOME TO OUR RESTAURANT</h1><br><br><br>
+    <h2>MENU</h2>
+    <div class="input-group1 overflow-hidden">
+        <input id="day" type="text" size="50" placeholder="What is the day?" class="effect-6">
+        <span class="bg"></span></div>
+    </div>
+    <button class="button1" onclick="chooseDay()">Go</button><br><br>
+    <h2 class="center"> Snack/food</h2>
+    <h2 class="answer" id="test"></h2>
+    <h2 class="answer" id="test2"></h2>
+    <h2 class="answer" id="test3"></h2>
+    <h2 class="answer" id="test4"></h2>
+    <hr>
+    <!-- hex color -->
+    <div class="container" id="tempColor">
+        <h2>background color : <span class="color">#f1f5f8</span></h2>
+        <button class="button1" id="btn8">click me</button>
+    </div>
+    <hr>
+
+    <!-- counter -->
+    <div class="container">
+        <h1>counter</h1>
+        <span id="value">0</span>
+        <div class="button-container">
+            <button class="button1 btn9 decrease">decrease</button>
+            <button class="button1 btn9 reset">reset</button>
+            <button class="button1 btn9 increase">increase</button>
+        </div>
+    </div>
+    <hr>
+    <!-- ip locator -->
+    <div class="contClass">
+        <h1>IP Locator</h1>
+        <button class="buttonClass button1" onclick="callApi()"> Find me </button>
+        <label id="info" class="info"></label>
+    </div>
+    <hr>
+    <!-- formatter -->
+    <h1>Type anything and change the look of it using these buttons</h1>
+    <nav class="navigation__panel">
+        <button class="button1 bold" onclick="makeBold(this)">Bold</button>
+        <button class="button1 italic" onclick="makeItalic(this)">Italic</button>
+        <button class="button1 underline" onclick="makeUnderline(this)">Underline</button>
+        <button class="align button1 left" onclick="alignText(this,'left')">Left Align</button>
+        <button class="align button1 center" onclick="alignText(this,'center')">Center Align</button>
+        <button class="align button1 right" onclick="alignText(this,'right')">Right Align</button>
+    </nav>
+    <main class="main-panel">
+        <div class="input-text">
+            <label class="tagname input-text-tagname">Text Input:</label>
+            <textarea placeholder="Enter your text here.." id="text-input" class="input-area" oninput="updateText()"></textarea>
+        </div>
+        <div class="output-text">
+            <label class="answer tagname output-text-tagname">Formatted Text:</label>
+            <div id="text-output" class="output-area"></div>
+        </div>
+    </main><br><br>
+    <hr>
+    <!-- squares -->
+    <h1>Hover over the squares to change their color</h1>
+    <div class="squares">
+        <div class="container1" id="container1"></div>
+    </div>
+    <hr>
+    <!-- button change -->
+    <h1>Press the button to change its style</h1>
+    <button style="background-color: wheat;" class="button1" onclick="newStyle();">
+
+        <p class="center" id="logo">Hello World</p>
+        </button>
+
+    <!-- button  -->
+    <!-- <button id="colorbutton">Hello</button>
+    <button id="nextbutton">World</button> <hr> -->
+
+
+
+    <!--  -->
+    <div class="input-group1">
+        <hr>
+        <h1 style="text-align: center;">Celsius to fahrenheit</h1>
+        <input type="text" placeholder=" " id="celsiusInput" class="effect-4">
+        <label for="celsiusInput">Convert from celsius to Fahrenheit</label>
+        <button onclick="toFahrenheit()" class="button1" id="btnCelsius" type="submit">Submit</button>
+        <br />
+        <br />
+        <p class="answer" id="fahrenheitOutput"></p>
+    </div>
+    <hr>
+
+    <!-- letters count -->
+    <textarea id="textarea-input" cols="30" rows="10"></textarea>
+    <p>Letters + spaces counter : <span id="counter">0</span></p>
+    <script>
+        let textareaInput = document.getElementById('textarea-input')
+        textareaInput.onkeyup = function() {
+            document.getElementById('counter').innerHTML = this.value.length;
+        };
+    </script>
+    <hr>
+
+
+    <!--  -->
+    <div class="end2">
+        <div class="vertical-tab">
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn" data-target-tab="#html">HTML</button>
+                    <button class="btn active" data-target-tab="#css">CSS</button>
+                    <button class="btn" data-target-tab="#js">JavaScript</button>
+                </div>
+                <div class="col-9">
+                    <div class="item" id="html">
+                        <h3>HTML</h3>
+                        <p>
+                            I know almost every important thing in HTML that would help me to make websites. Therefore, I do not see myself doing research about it anymore. </p>
+                    </div>
+                    <div class="item active" id="css">
+                        <h3>CSS</h3>
+                        <p>
+                            CSS is harder than what I expected, I thought it would be as easy as HTML but I was wrong. I know some of the important things and I always can use the internet when I do not know how to implement something. </p>
+                    </div>
+                    <div class="item" id="js">
+                        <h3>JavaScript</h3>
+                        <p>
+                            JavaScript is the most interesting programming language in my opinion. Despite the fact that it is difficult for the beginners , I believe that I can get over these problems. I see myself investing most of my time on learning it, and from what I saw on
+                            the social media, JS is the language that I want the most to be good at. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const btnss = document.querySelectorAll("[data-target-tab]");
+
+        btnss.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                btnss.forEach((btn) => btn.classList.remove("active"));
+
+                const items = document.querySelectorAll(".item");
+
+                items.forEach((item) => item.classList.remove("active"));
+                btn.classList.add("active");
+                document.querySelector(btn.dataset.targetTab).classList.add("active");
+            });
+        });
+    </script>
+    <!-- to do  -->
+
+    <div style="width: 80%; margin: auto;" class="container">
+        <div id="header" class="header">
+            <h1>My to do list</h1>
+            <input type="text" id="the-input" placeholder="what you want to do....">
+            <span onclick="CreateNewElement()" class="create-botton">Create Todo</span>
+        </div>
+        <ul id="the-ul">
+            <li>Buy a car</li>
+            <li>Get a JOb</li>
+            <li>Grocery</li>
+            <li>Get bread</li>
+            <li>Get eggs</li>
+        </ul>
+    </div>
+    <script>
+        // creating close button for listes that are not created in main function()
+        let myList = document.getElementsByTagName('li');
+        let index;
+        for (index = 0; index < myList.length; index++) {
+            let aSpanTag = document.createElement('SPAN')
+            let someTxt = document.createTextNode("\u00d7")
+            aSpanTag.className = "close"
+            aSpanTag.appendChild(someTxt)
+            myList[index].appendChild(aSpanTag)
+        }
+        // .close button
+        let closeButton = document.getElementsByClassName("close")
+        for (i = 0; i < closeButton.length; i++) {
+            closeButton[i].onclick = function() {
+                let theDiv = this.parentElement
+                theDiv.style.display = "none"
+            }
+        }
+        // creating checked tofo
+        let ulList = document.querySelector('ul')
+        ulList.addEventListener('click', function(event) {
+            if (event.target.tagName === "LI") {
+                event.target.classList.toggle('checked');
+            }
+        }, false)
+
+        // creating to do function()
+        function CreateNewElement() {
+            let li = document.createElement('li')
+            let theInput = document.getElementById('the-input').value
+            let textNode = document.createTextNode(theInput)
+            li.appendChild(textNode)
+            if (theInput === "") {
+                alert("this cannot be empty")
+            } else {
+                document.getElementById('the-ul').appendChild(li)
+            }
+            document.getElementById("the-input").value = "";
+
+            let thePanTag = document.createElement("SPAN")
+            let txt = document.createTextNode("\u00d7")
+            thePanTag.className = "close"
+            thePanTag.appendChild(txt)
+            li.appendChild(thePanTag)
+                //removing items when clicked on span close button
+            for (i = 0; i < closeButton.length; i++) {
+                closeButton[i].onclick = function() {
+                    var theDiv = this.parentElement
+                    theDiv.style.display = "none"
+                }
+            }
+        }
+    </script><br><br>
+    <hr><br><br>
+
+    <!-- clock -->
+    <div class="containerx">
+        <p id="time"></p>
+    </div>
+
+    <script>
+        (function() {
+            function addZeroBefore(v) {
+                return +v < 10 ? "0" + +v : v;
+            }
+
+            function showTime() {
+
+                let today = new Date();
+                let textTime = addZeroBefore(today.getHours()) + " : " + addZeroBefore(today.getMinutes()) + " : " + addZeroBefore(today.getSeconds());
+
+                document.getElementById("time").innerHTML = textTime;
+
+                setTimeout(function() {
+                    showTime()
+                }, 1000);
+            }
+
+            showTime();
+        })();
+    </script>
+
+    <!-- countdown -->
+    <h1>My 22th BirtDay(24/12/2022)</h1>
+    <div class="end3">
+        <div class="countdown-container">
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>days</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>hours</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>mins</span>
+            </div>
+            <div class="countdown-el second-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>seconds</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const daysEl = document.getElementById('days');
+        const hoursEl = document.getElementById('hours');
+        const minsEl = document.getElementById('mins');
+        const secondsEl = document.getElementById('seconds');
+
+        //bisa diganti dengan tgl lahir, dan lain-lain
+        const newMe = '24 Dec 2022';
+
+        function countDown() {
+            const newMeDate = new Date(newMe);
+            const currentDate = new Date();
+
+            const totalSeconds = (newMeDate - currentDate) / 1000;
+
+            const days = Math.floor(totalSeconds / 3600 / 24);
+            const hours = Math.floor(totalSeconds / 3600) % 24;
+            const minutes = Math.floor(totalSeconds / 60) % 60;
+            const seconds = Math.floor(totalSeconds % 60);
+            // console.log(days, hours, minutes, seconds)
+
+            daysEl.innerHTML = days;
+            hoursEl.innerHTML = formatTime(hours);
+            minsEl.innerHTML = formatTime(minutes);
+            secondsEl.innerHTML = formatTime(seconds);
+        }
+
+        function formatTime(time) {
+            return time < 10 ? (`0${time}`) : time;
+        }
+
+        countDown();
+
+        setInterval(countDown, 1000)
+    </script>
+
+    <section>
+        <h1>Online Courses</h1>
+        <div>
+            <img src="img/jsbook.JPG" alt="eloquent book"><br><br>
+            <h2>Eloquent Book for js </h2>
+            <img style="margin-top: 80px;" src="img/udemy.JPG" alt="udemy Courses"><br><br>
+            <h2>I bought 3 udemy courses that I want to attend in the 2 weeks break.</h2>
+        </div>
+    </section>
+    <br><br><br>
+    <button onclick="topFunction()" id="myBtn" class="noselect"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg></button>
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
